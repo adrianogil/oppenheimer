@@ -72,6 +72,7 @@ doc = [
 
 [tool.poetry.scripts]
 oppenheimer = 'oppenheimer.cli:main'
+oppenheimer-canvasboard = 'oppenheimer.canvasboard.cli:main'
 
 [tool.black]
 line-length = 120
