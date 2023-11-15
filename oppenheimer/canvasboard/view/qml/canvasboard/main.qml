@@ -9,4 +9,8 @@ ApplicationWindow {
     height: 700
     title: qsTr("Canvas Board")
     color: "whitesmoke"
+
+    CanvasBoard {
+        
+    }
 }
