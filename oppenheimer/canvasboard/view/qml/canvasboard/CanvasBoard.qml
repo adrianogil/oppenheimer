@@ -11,8 +11,7 @@ Rectangle {
     visible: true
     color: "whitesmoke"
 
-    anchors.verticalCenter: parent.verticalCenter
-    anchors.horizontalCenter: parent.horizontalCenter
+    anchors.centerIn: parent
 
     Text {
         id: welcomeTitle
@@ -26,6 +25,7 @@ Rectangle {
 
             anchors.fill: parent // Fill the area of the Text element
 
+            drag.target: welcomeTitle  // Enables smooth dragging behavior for welcomeTitle
             property point lastMousePos
 
             onPressed: {

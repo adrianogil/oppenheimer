@@ -16,7 +16,7 @@ class QmlMainView(QObject):
         )
         self.main_qml = os.path.join(self.qml_root, "canvasboard/main.qml")
         self.current_qml = self.main_qml
-    
+
     def show(self):
         # Create an Qt instance of the application
         app = QApplication(sys.argv)
@@ -26,4 +26,4 @@ class QmlMainView(QObject):
         self.qml_engine.rootContext().setContextProperty("pyview", self)
         self.qml_engine.load(self.current_qml)
         self.qml_engine.quit.connect(app.quit)
-        sys.exit(app.exec_())
+        app.exec_()
